@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	background:url(../img/bg.jpg);
+	background-size: 100% 100%;
+	position:fixed;
+	left:0;
+	top:0;
+}
+header{
+	color: #f00;
+}
+.start{
+	top:100px;
+	left:80px;
+	position: absolute;
+}
+.start,.over,.Restart,div.group>button{
+	font-size: 30px;
+	font-weight: bold;
+	height:70px;
+	width:200px;
+	border-radius:15px;
+	background:linear-gradient(#000,red,#fff);
+	color: #fff;
+}
+div.group>button{
+	margin:150px 60px;
+}
+div.group>button:active{
+	transition: 0.5s;
+	background:linear-gradient(rgb(0, 0, 0),rgb(197, 10, 10),rgb(255, 255, 255)) !important;
+}
+div.group>button:nth-child(2){
+	background:linear-gradient(rgb(179, 189, 42),rgb(74, 160, 167),rgb(49, 211, 49));
+	border: 4px solid rgb(0, 250, 0);
+	color: #0f0;
+}
+div.group>button:nth-child(3){
+	background:linear-gradient(rgb(204, 94, 75),rgb(0, 0, 0),rgb(224, 35, 35));
+	border: 4px solid rgb(250, 112, 0);
+	color: #f90;
+}
+div.group>button:nth-child(4){
+	background:linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255),rgb(211, 49, 49));
+	border: 4px solid rgb(0, 0, 0);
+	color: #000;
+}
+button.Restart{
+	border: 4px solid #ff0;
+	background:linear-gradient(#f00,#000,#f00);
+}
+button.Restart:active{
+	transition: 0.5s;
+	transform: scale(1.4,1.1)
+}
+button.over:active{
+	transition: 0.5s;
+	transform: scale(1.4,1.1)
+}
+button.start:active{
+	transition: 0.5s;
+	transform: scale(1.4,1.1)
+}
+.over{
+	display: none;
+	position: absolute;
+	top:100px;
+	left:80px;
+}
+.prompt,.prompt1{
+	position: absolute;
+	top:20px;
+	left:50%;
+	width: 500px;
+	margin-left:-400px;
+	font-size: 40px;
+	text-align: center;
+	font-family:"仿宋";
+	display: none;
+}
+/* .prompt */
+p.prompt1{
+	left:50%;
+	margin: 0;
+	/* font-size: 20px; */
+}
+.prompt>span{
+	color:red;
+	font-size: 60px;
+	font-style: italic;
+}
+.box{
+	width:1296px;
+	height:699px;
+	/* border:2px solid #005066ff; */
+	border-top:2px #005066ff solid;
+	border-right:2px #005066ff solid;
+	margin: 10px auto 0 auto;
+	box-shadow: 2px 7px 10px black;
+	transform: perspective(800px) rotateX(30deg);
+	display: none;
+	background:#ad7845;
+}
+.block{
+	width:70px;
+	height:68px;
+	border-bottom:2px solid black;
+	border-left:2px solid black;
+	background:#0f0;
+	float: left;
+}
+.group{
+	width: 1000px;
+	height:300px;
+	background: #abcdef;
+	margin: 250px auto;
+	border-radius: 20px;
+	background: linear-gradient(#000,green);
+	display:none;
+	color: #fff;
+	text-align: center;
+}
+.block:hover{
+	cursor: pointer;
+	/* background:#00f; */
+	/* color: #fff; */
+}
+.show{
+	background:url(../img/bomb.png);
+	background-size: 100%;
+}
+.num{
+	background:#fff;
+	text-align: center;
+	font-size:30px;
+	line-height: 68px;
+	color: #000;
+	font-weight: bolder;
+}
+.Flags{
+	background: url('../img/Flags.jpg');
+	background-size: 100% 100%;
+} 
+.GameWin,.gameOver{
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(#000,#f00);
+	color: #fff;
+	font-size: 50px;
+	text-align:center;
+	line-height:150px;
+	margin: 0 auto;
+	text-shadow: 2px 4px 10px #00f;
+	font-style: italic;
+	display: none;
+}
+.close{
+	position:fixed;
+	right: 0;
+	cursor: pointer;
+	z-index: 999;
+}
+.close:active{
+	transform:scale(1.5);
+	transition: all 0.35s ease;
+}
